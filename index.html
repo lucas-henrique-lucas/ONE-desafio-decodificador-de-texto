@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Criptografar ou Descriptografar textos.">
+    <title>Jesterd3co</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 id="header__titulo">Jester<img src="/img/icon-coringa-x32.png" alt="">d<span>3</span>co</h1>
+    </header>
+    <main class="main">
+        <section class="conteiner">
+            <div id="quadro">
+                <h2 id="quadro__titulo">Nenhuma mensagem encontrada.</h2>
+                <p id="quadro__texto">Digite um texto que você deseja embaralhar ou desembaralhar.</p>
+                <button class="btn" id="quadro__btn_copiar" onclick="copiar()">COPIAR</button>
+            </div>
+        </section>
+        <section class="conteiner">
+            <textarea id="area_de_texto" placeholder="Digite seu texto..."></textarea>
+            <p class="aviso"><img src="img/exclamacao.svg" alt="">Apenas letras minúsculas e sem acento.</p>
+            <div class="caixa_botoes">
+                <button class="btn" onclick="embaralhar()">EMBARALHAR</button>
+                <button class="btn btn_desembaralhar" onclick="desembaralhar()">DESEMBARALHAR</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__links">
+            <li><a href="#"><img src="img/icon-github.svg" alt="github"></a></li>
+            <li><a href="#"><img src="img/icon-linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="#"><img src="img/icon-instagram.svg" alt="instagram"></a></li>
+        </ul>
+        <p>Desenvolvido por Lucas Henrique.</p>
+    </footer>
+</body>
+</html>
